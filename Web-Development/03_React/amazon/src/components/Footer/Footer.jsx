@@ -1,22 +1,35 @@
 import React from 'react'
-import {  Container, Row } from 'react-bootstrap'
-import Col from 'react-bootstrap/Col';
+import {  Container, Row , Col} from 'react-bootstrap'
+
 import './footer.css'
 
 function Footer() {
   return (
     <>
-  
-    <div className='footer'>
-    <container  className = 'ajay'>
-    <ul>
-    <li> <a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact us</a></li>
-    <li><a href="#">Help</a></li>
-   </ul>
-   </container>
-   </div>
+   <footer className="bg-black text-white">
+      <Container className="p-4">
+        <Row>
+          <Col md={4}>
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Col>
+          <Col md={4}>
+            <h4>Contact Us</h4>
+            <p>Email: info@example.com</p>
+            <p>Phone: 555-1234</p>
+          </Col>
+          <Col md={4}>
+            <h4>Follow Us</h4>
+            <p>Facebook</p>
+            <p>Twitter</p>
+          </Col>
+        </Row>
+        <Row>
+    
+        </Row>
+      </Container>
+    </footer>
+    
     </>
   )
 }

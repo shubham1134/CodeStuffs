@@ -1,6 +1,11 @@
 .footer {
-  align-self: stretch;
+  padding: 50px 0;
 }
-.ajay {
-  padding-left: 10%;
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
 }
