@@ -8,7 +8,7 @@ import { TiSocialTumblerCircular } from "react-icons/ti";
 function Footer() {
   return (
     <div>
-        <Container fluid className="footer">
+        <Container  fluid className="footer">
             <div>
                 <Row>
                     <Col> <h3>Sample Website</h3>

@@ -3,13 +3,18 @@ import "./header.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Button } from "bootstrap";
+import { LuPackagePlus } from "react-icons/lu";
+import { GrServices } from "react-icons/gr";
+import { GrVmMaintenance } from "react-icons/gr";
+import { FaPaintRoller } from "react-icons/fa6";
+
 
 
 function Header() {
   return (
     <>
       <Container className="navbar">
+
         <Row>
           <Col>
             <h1>This is a Heading Text</h1>
@@ -17,7 +22,7 @@ function Header() {
 
             <Row>
             
-            <div className="container">
+            <div className="">
              
                <button className="bottom-button">Click Me</button>
              </div>
@@ -28,18 +33,36 @@ function Header() {
           </Col>
         </Row>
       </Container>
-    
+      <Container  >
       <div>
         <Row>
-          <Col  coolbox>
-           
-          <img src="https://cdn-icons-png.freepik.com/256/1067/1067555.png" />
+          <Col className="Package">
+          <h3>Package</h3>
+          <LuPackagePlus className="icon"/>
+
           </Col>
-          <Col></Col>
-          <Col></Col>
-          <Col></Col>
+          <Col className="Package">
+          <h3>Servicing</h3>
+          <GrServices className="icon" />
+          </Col>
+          <Col className="Package">
+          <h3>Maintainence </h3>
+          <GrVmMaintenance className="icon" />
+          </Col>
+          <Col className="Package">
+          <h3>Deleting/Painting</h3>
+          <FaPaintRoller  className="icon" />
+          </Col>
         </Row>
       </div>
+      </Container>
+      <Row>
+      <div className="line"> 
+        <h2>
+          Why Choose Us
+        </h2>
+      </div>
+      </Row>
 
     </>
   );
